@@ -1,0 +1,14 @@
+:root {
+  --secodry: #ffffff;
+  --primery: #3498db;
+  --additional: #34495e;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    var(--additional),
+    var(--secodry)
+  );
+}

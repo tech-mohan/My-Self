@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  position: relative;
+  top: 100px;
+  gap: 20px;
+}
+.profile_pic img {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+.profile_pic {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 0;
+  animation: moving forwards 1 3s;
+}
+.para {
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.para h1,
+.edu-det h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+/* .edu-det h1 {
+  color: #013220;
+  font-size: 50px;
+} */
+.para p {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 18px;
+  /* color: #00ff; */
+  background: linear-gradient(45deg, #013220, #03045e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes moving {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+.edu {
+  margin-top: 200px;
+  text-align: center;
+}
+.edu-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  animation: sliding forwards 1 3s;
+}
+/* .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.logo img {
+  width: 350px;
+  height: 350px;
+  align-items: center;
+}
+.highlight {
+  font-weight: bolder;
+  color: #03045e;
+}
+
+.certificates {
+  gap: 15px;
+  position: relative;
+  top: 60px;
+  justify-content: center;
+}
+.left h6,
+.right h6 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.left :nth-child(2),
+.left :nth-child(1) {
+  color: #013220;
+}
+.right :nth-child(2),
+.right :nth-child(1) {
+  color: #013220;
+}
+.left p,
+.right p {
+  text-align: justify;
+  color: #03045e;
+  font-size: 16px;
+}
+.left,
+.right {
+  box-shadow: 0px 0px 15px gray;
+  width: 550px;
+  padding: 20px;
+}
+.left .btn,
+.right .btn {
+  width: fit-content;
+}
+.left .btn a,
+.right .btn a {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  @keyframes moving {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .edu-det {
+    order: 2;
+  }
+  .profile_pic img {
+    width: 300px;
+    height: 300px;
+  }
+  .logo img {
+    width: 300px;
+    height: 300px;
+  }
+  .left,
+  .right {
+    width: 350px;
+  }
+}
+
+footer {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding-left: 0;
+}
+.fa-brands,
+.fa-solid {
+  font-size: xx-large;
+}
+/* .fa-linkedin {
+  width: 3px;
+  height: 3px;
+} */

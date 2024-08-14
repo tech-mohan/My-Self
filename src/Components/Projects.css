@@ -1,0 +1,132 @@
+.rightside img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px black;
+}
+.project {
+  margin-top: 100px;
+  align-items: center;
+}
+.rightside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(90deg);
+  animation: rotate forwards 1 3s;
+}
+.leftside h1 {
+  color: antiquewhite;
+}
+.leftside p {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bold;
+  color: #03045e;
+  margin-top: 20px;
+}
+.leftside p b {
+  font-size: 22px;
+  color: #013220;
+}
+.leftside {
+  animation: slide forwards 1 3s;
+  left: -100px;
+  /* overflow: hidden;
+  white-space: nowrap; */
+  position: relative;
+}
+
+.tech {
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.tech-img {
+  transform: scaleX(-1);
+  border-radius: 30px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 15px black;
+}
+.tec-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-stack {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: bold;
+  color: #013220;
+  margin-top: 20px;
+  order: 2;
+}
+.tech-stack h2 {
+  color: #03045e;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.screenshots {
+  text-align: center;
+  margin-top: 100px;
+}
+.screenshots h1 {
+  font-size: 44px;
+}
+.screenshots div {
+  margin-top: 20px;
+}
+.screenshots div img {
+  border-radius: 5px;
+  width: 500px;
+  height: 280px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px black;
+  animation: rotate forwards 1 3s;
+}
+@keyframes slide {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 1000px) {
+  .project {
+    margin-top: 30px;
+  }
+  .rightside {
+    order: 1;
+  }
+  .leftside {
+    order: 2;
+    margin-top: 30px;
+  }
+  .tech {
+    margin-top: 50px;
+  }
+  .tech-stack {
+    margin-top: 30px;
+  }
+  .rightside img,
+  .tech-img {
+    width: 300px;
+    height: 300px;
+  }
+  .screenshots div img {
+    width: 300px;
+    height: 200px;
+  }
+}
