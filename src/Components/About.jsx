@@ -123,7 +123,7 @@ function About() {
             </a>
           </li>
           <li>
-            <a href="mailto:mohanapandian003@gmail.com">
+            <a href="mailto:mohanapandian2003@gmail.com">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </li>
